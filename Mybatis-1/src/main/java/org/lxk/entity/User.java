@@ -20,6 +20,14 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public User(Integer id, String name, String password, Integer age, Integer deleteflage) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.age = age;
+        this.deleteflage = deleteflage;
+    }
+
     public Integer getId() {
         return id;
     }
