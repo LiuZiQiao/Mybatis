@@ -28,7 +28,7 @@ public class App
     public void findUserById(){
         SqlSession sqlSession = getSqlSessionFactory().openSession();
         UserDao userDao = sqlSession.getMapper(UserDao.class);
-        User user = userDao.findUserById(1);
+        User user = userDao.findUserById(3);
         System.out.println(user);
     }
 
@@ -36,7 +36,7 @@ public class App
     public void insertUser(){
         SqlSession sqlSession = getSqlSessionFactory().openSession();
         UserDao userDao = sqlSession.getMapper(UserDao.class);
-        User user = new User(2,"zzz","123",22,0);
+        User user = new User(3,"zzz","123",22,0);
         userDao.insert(user);
     }
 

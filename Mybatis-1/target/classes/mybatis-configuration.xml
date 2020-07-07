@@ -39,7 +39,4 @@
 <!--        <mapper resource="org/lxk/dao/UserDao.xml"/>-->
         <mapper resource="mapper/UserDao.xml"></mapper>
     </mappers>
-    <typeAliases>
-        <package name="org.lxk.entity.User"/>
-    </typeAliases>
 </configuration>

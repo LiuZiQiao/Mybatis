@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.lxk.dao.UserDao">
     <insert id="insert">
-        insert into user(id,username,password,age,deleteFlage) values(#{id},#{username},#{password},#{age},#{delegeFlage})
+        insert into user(id,name,password,age,deleteflage) values(#{id},#{name},#{password},#{age},#{deleteflage})
     </insert>
     <select id="findUserById" resultType="org.lxk.entity.User">
         select *from user where id=#{id}
